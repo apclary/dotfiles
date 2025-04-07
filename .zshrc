@@ -20,7 +20,7 @@ alias bball='brc --allPackages'
 alias bbb='brc --allPackages brazil-build'
 alias mw='mwinit -s'
 export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
-alias gall='find . -type d -name .git -exec sh -c '\''cd "{}"/../ && echo -e "\n\033[1;36m=== $(basename ${PWD}) ===\033[0m" && git status -s'\'' \;'
+alias gall='find . -type d -name .git -exec sh -c '\''cd "{}"/../ && echo "\n\033[1;36m=== $(basename ${PWD}) ===\033[0m" && git status -s'\'' \;'
 alias gcaa='git commit -a --amend'
 export PATH=$HOME/.toolbox/bin:$PATH
 
