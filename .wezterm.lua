@@ -13,6 +13,10 @@ return {
 		"tmux",
 		"nvim",
 	},
+	-- Removes the title bar, leaving only the tab bar.
+	window_decorations = "INTEGRATED_BUTTONS",
+	exit_behavior = "Close",
+	color_scheme = "Catppuccin Mocha",
 	font = wezterm.font_with_fallback({
 		{
 			family = "Cascadia Code",
