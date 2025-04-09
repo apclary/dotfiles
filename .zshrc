@@ -3,8 +3,7 @@
 
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
-alias gl1='git log --oneline'
-
+alias gl1='git log -n 10 --pretty=format:"%h%d %ad %an: %s" --date=short'
 alias bb=brazil-build
 alias bba='brazil-build apollo-pkg'
 alias bre='brazil-runtime-exec'
