@@ -1,5 +1,8 @@
 local wezterm = require("wezterm")
 
+-- Get the current configuration
+local config = wezterm.config_builder()
+
 return {
 	keys = { {
 		key = "w",
@@ -17,6 +20,10 @@ return {
 	window_decorations = "INTEGRATED_BUTTONS",
 	exit_behavior = "Close",
 	color_scheme = "Catppuccin Mocha",
+	-- Override the background color to match Neovim's vague theme
+	colors = {
+		background = "#0F0F10",
+	},
 	font = wezterm.font_with_fallback({
 		{
 			family = "Cascadia Code",
