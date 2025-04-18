@@ -3,36 +3,10 @@
 
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
-alias gl1='git log -n 10 --pretty=format:"%h%d %ad %an: %s" --date=short'
-alias bb=brazil-build
-alias bba='brazil-build apollo-pkg'
-alias bre='brazil-runtime-exec'
-#alias brc='brazil-recursive-cmd'
-alias brc='brazil-recursive-cmd-parallel'
-alias bws='brazil ws'
-alias bs='brazil ws sync'
-alias bsm='brazil ws --sync -md'
-alias bwsuse='bws use --gitMode -p'
-alias bwscreate='bws create -n'
-alias bbr='brc brazil-build'
-alias bball='brc --allPackages'
-alias bbb='brc --allPackages brazil-build'
-alias mw='mwinit -s'
-export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
 alias gall='find . -type d -name .git -exec sh -c '\''cd "{}"/../ && echo "\n\033[1;36m=== $(basename ${PWD}) ===\033[0m" && git status -s'\'' \;'
 alias gcaa='git commit -a --amend'
-export PATH=$HOME/.toolbox/bin:$PATH
-
-alias sshcdm="ssh alxclary-cdm"
-alias ssh-cd="ssh dev-dsk-alxclary-1d-551ab4fc.us-east-1.amazon.com"
-alias ding="afplay /System/Library/Sounds/Funk.aiff"
-alias credsalpha="ada credentials update --account=FT-PIF-Alpha --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE --once"
-alias credsbeta="ada credentials update --account=FT-PIF-Alpha --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE --once"
-alias credsgamma="ada credentials update --account=FT-PIF-Gamma --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE --once"
-alias credsprod="ada credentials update --account=FT-PIF-Prod --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE --once --conduit-read-only"
-alias credspersonal="ada credentials update --account=alxclary --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE --once"
-alias credsai="ada credentials update --account=FT-GenAI-Dev --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE --once"
-
+alias gl1='git log -n 10 --pretty=format:"%h%d %ad %an: %s" --date=short'
+export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -148,8 +122,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Set up mise for runtime management
 eval "$(mise activate zsh --quiet)"
 source /Users/alxclary/.brazil_completion/zsh_completion
-#export PATH="/opt/homebrew/Cellar/neovim/0.10.1/bin:$PATH"
+export PATH="$HOME/dev-tools/sqlcl/bin:$PATH"
+
 #source ~/.local/share/mise/completions.zsh
+
+# Load private configurations if the file exists
+if [ -f "$HOME/.zsh_private" ]; then
+  source "$HOME/.zsh_private"
+fi
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
