@@ -45,5 +45,5 @@ return {
 	},
 	--Uncomment below for cursive italics
 	--harfbuzz_features = { "ss01" }, -- Enable stylistic set 1 globally
-	font_size = 14.0,
+	font_size = 13.0,
 }
