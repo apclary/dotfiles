@@ -1,3 +1,2 @@
 config:
-  MD013:
-    line_length: 100 # Default max line length is 80
+  MD013: false
