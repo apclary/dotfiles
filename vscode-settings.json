@@ -1,0 +1,97 @@
+{
+  "[brazilPackageConfig]": {
+    "workbench.editor.languageDetection": false
+  },
+  "amazonQ.suppressPrompts": {
+    "amazonQChatDisclaimer": true,
+    "amazonQChatPairProgramming": true,
+    "amazonQSelectDeveloperProfile": true,
+    "amazonQSessionConfigurationMessage": true,
+    "codeWhispererConnectionExpired": true
+  },
+  "amazonQ.workspaceIndex": true,
+  "editor.accessibilitySupport": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "files.exclude": {
+    ".viceroy": true,
+    "apollo-overrides": true,
+    "release-info": true,
+    "src/*/build": false,
+    "build": false,
+    "env": true,
+    "packageInfo*": true,
+    ".bemol": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/CVS": true
+  },
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hg/store/**": true,
+    "**/node_modules/*/**": true
+  },
+  "git.blame.editorDecoration.enabled": true,
+  "git.ignoreRebaseWarning": true,
+  "redhat.telemetry.enabled": true,
+  "search.exclude": {
+    "env": true,
+    "src/*/build": true,
+    "build": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "sqldeveloper.sqlHistory.historyLimit": 500,
+  "sqldeveloper.telemetry.enabled": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.external.osxExec": "/opt/homebrew/bin/fish",
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
+  "viceroy.config.internal.lastUpdateTime": "2025-08-09T02:28:42.518Z",
+  "viceroy.config.lastVersion": "0.53.202219",
+  "viceroy.config.notifyGlibcIssue": false,
+  "viceroy.config.notifyMarch25AL2Support": false,
+  "viceroy.config.notifyMarchAL2Incompatibility": false,
+  "viceroy.config.setup.amazonQ": false,
+  "viceroy.doc.welcome.showAtStartup": false,
+  "viceroy.marketplace.extensionUpdateChannels": {
+    "amazon.controls-dsl": "stable",
+    "amzn.AWSGuruQLinter": "stable",
+    "amzn.amzn-pippin": "stable",
+    "amzn.controls-dsl": "stable",
+    "amzn.vscode-isengard-tooltip": "stable",
+    "asbx.amzn-cline": "insiders",
+    "kaze.vscode-plugin-contribution-model": "stable",
+    "marklel.vscode-brazil": "stable",
+    "mchpatr.datapath-language-server": "stable",
+    "mchpatr.datapath-vscode": "stable"
+  },
+  "viceroy.workspaceSyncStrategy": "automatic",
+  "vscode-neovim.neovimClean": true,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.startupEditor": "none",
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "editor.fontFamily": "Cascadia Code NF, Menlo, Monaco, 'Courier New', monospace",
+  "editor.formatOnSave": true,
+  "excalidraw.theme": "auto"
+}
