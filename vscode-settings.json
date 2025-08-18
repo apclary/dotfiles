@@ -63,8 +63,8 @@
   "terminal.integrated.env.osx": {
     "Q_NEW_SESSION": "1"
   },
-  "viceroy.config.internal.lastUpdateTime": "2025-08-09T02:28:42.518Z",
-  "viceroy.config.lastVersion": "0.53.202219",
+  "viceroy.config.internal.lastUpdateTime": "2025-08-15T21:24:52.109Z",
+  "viceroy.config.lastVersion": "0.53.202235",
   "viceroy.config.notifyGlibcIssue": false,
   "viceroy.config.notifyMarch25AL2Support": false,
   "viceroy.config.notifyMarchAL2Incompatibility": false,
@@ -83,7 +83,6 @@
     "mchpatr.datapath-vscode": "stable"
   },
   "viceroy.workspaceSyncStrategy": "automatic",
-  "vscode-neovim.neovimClean": true,
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
