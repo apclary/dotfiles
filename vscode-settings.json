@@ -92,5 +92,6 @@
   "terminal.integrated.fontLigatures.enabled": true,
   "editor.fontFamily": "Cascadia Code NF, Menlo, Monaco, 'Courier New', monospace",
   "editor.formatOnSave": true,
-  "excalidraw.theme": "auto"
+  "excalidraw.theme": "auto",
+  "editor.formatOnPaste": true
 }
