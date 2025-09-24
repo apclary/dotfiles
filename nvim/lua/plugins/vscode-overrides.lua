@@ -1,5 +1,10 @@
 -- Disable plugins that conflict with VSCode
 if vim.g.vscode then
+  vim.opt.spell = false
+  vim.opt.wrap = false
+  vim.opt.cursorline = false
+  -- Disable LazyVim's spell autocmd for text filetypes
+  vim.api.nvim_create_augroup("wrap_spell", { clear = true })
   return {
     { "akinsho/bufferline.nvim", enabled = false }, -- VSCode has tabs
     { "nvim-lualine/lualine.nvim", enabled = false }, -- VSCode has status bar
