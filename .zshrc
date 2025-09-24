@@ -21,3 +21,13 @@ if [ -f "$HOME/.zsh_private" ]; then
 fi
 
 eval "$(starship init zsh)"
+# ADA function
+adaa() {
+    if [ $# -eq 0 ]; then
+        echo "Usage: adaa <account>"
+        echo "Example: adaa PFSReportingBeta"
+        return 1
+    fi
+    ada credentials update --account="$1" --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE --once
+}
+alias python3="/Users/alxclary/.local/share/mise/installs/python/3.12.4/bin/python"
