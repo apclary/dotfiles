@@ -3,3 +3,6 @@
 -- Add any additional options here
 vim.g.lazyvim_prettier_needs_config = false
 vim.diagnostic.config({ virtual_lines = true })
+
+-- Disable spell checking
+vim.opt.spell = false
