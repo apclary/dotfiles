@@ -63,8 +63,8 @@
   "terminal.integrated.env.osx": {
     "Q_NEW_SESSION": "1"
   },
-  "viceroy.config.internal.lastUpdateTime": "2025-09-23T21:47:43.493Z",
-  "viceroy.config.lastVersion": "0.53.202317",
+  "viceroy.config.internal.lastUpdateTime": "2025-10-08T14:24:25.530Z",
+  "viceroy.config.lastVersion": "0.53.202343",
   "viceroy.config.notifyGlibcIssue": false,
   "viceroy.config.notifyMarch25AL2Support": false,
   "viceroy.config.notifyMarchAL2Incompatibility": false,
@@ -93,5 +93,6 @@
   "editor.fontFamily": "Cascadia Code NF, Menlo, Monaco, 'Courier New', monospace",
   "editor.formatOnSave": true,
   "excalidraw.theme": "auto",
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "chat.disableAIFeatures": true
 }
