@@ -2,7 +2,7 @@
 
 alias gall='find . -type d -name .git -exec sh -c '\''cd "{}"/../ && echo "\n\033[1;36m=== $(basename ${PWD}) ===\033[0m" && git status -s'\'' \;'
 alias gcaa='git commit -a --amend'
-alias gl1='git log -n 10 --pretty=format:"%h%d %ad %an: %s" --date=short'
+alias gl1='git log -n 10 --color=always --decorate --pretty=format:"%C(yellow)%h%C(reset) %C(auto)%D%C(reset)%x09%C(blue)%an%C(reset)%x09%C(green)%ad%C(reset)%x09%s" --date=short'
 export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
 
 # export ZSH="$HOME/.oh-my-zsh"
