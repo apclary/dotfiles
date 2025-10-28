@@ -2,17 +2,13 @@
 # Disable the "running process" warning when closing terminal
 confirm-close-surface = false
 
-# Theme configuration
-theme = Brogrammer
+copy-on-select=clipboard
+#theme = Brogrammer
+theme = Framer
 
-# Performance settings
-# Removed unknown fields:
-# - gpu-accelerated
-# - vsync
-# - max-frame-rate
-# - font-feature-settings
-background-opacity = 1.0
-
-# Quick Terminal hotkey (from GitHub issue #3610)
 # Ctrl + backtick (`) to toggle Quick Terminal globally
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
+
+# Split configuration
+focus-follows-mouse = true
+split-divider-color = white
