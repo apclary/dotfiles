@@ -4,11 +4,13 @@ confirm-close-surface = false
 
 copy-on-select=clipboard
 #theme = Brogrammer
-theme = Framer
+theme = Seti
 
 # Ctrl + backtick (`) to toggle Quick Terminal globally
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
 
 # Split configuration
 focus-follows-mouse = true
-split-divider-color = white
+split-divider-color = light steel blue
+unfocused-split-opacity = 0.9
+unfocused-split-fill = White
