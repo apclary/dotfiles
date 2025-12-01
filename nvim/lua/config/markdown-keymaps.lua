@@ -13,13 +13,13 @@ local function surround_text(prefix, suffix)
   return function()
     local mode = vim.fn.mode()
     if mode == "v" then
-      vim.cmd('normal! c' .. prefix .. vim.fn.getreg('"') .. suffix .. '<Esc>')
+      vim.cmd('normal! c' .. prefix .. vim.fn.getreg('"') .. suffix .. '\27')
     elseif mode == "V" then
       local line = vim.fn.getline(".")
       vim.fn.setline(".", prefix .. line .. suffix)
-      vim.cmd('normal! <Esc>')
+      vim.cmd('normal! \27')
     else
-      vim.cmd('normal! ciw' .. prefix .. vim.fn.getreg('"') .. suffix .. '<Esc>')
+      vim.cmd('normal! ciw' .. prefix .. vim.fn.getreg('"') .. suffix .. '\27')
     end
   end
 end
