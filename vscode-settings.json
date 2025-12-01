@@ -63,8 +63,8 @@
   "terminal.integrated.env.osx": {
     "Q_NEW_SESSION": "1"
   },
-  "viceroy.config.internal.lastUpdateTime": "2025-10-08T14:24:25.530Z",
-  "viceroy.config.lastVersion": "0.53.202343",
+  "viceroy.config.internal.lastUpdateTime": "2025-11-19T04:53:22.180Z",
+  "viceroy.config.lastVersion": "0.53.202469",
   "viceroy.config.notifyGlibcIssue": false,
   "viceroy.config.notifyMarch25AL2Support": false,
   "viceroy.config.notifyMarchAL2Incompatibility": false,
