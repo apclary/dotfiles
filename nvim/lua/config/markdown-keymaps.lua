@@ -24,10 +24,40 @@ local function surround_text(prefix, suffix)
   end
 end
 
+-- Strikethrough function for normal mode only
+local function strikethrough()
+  local line = vim.fn.getline(".")
+  local marker, content = line:match("^(%s*[-*+]%s+)(.*)")
+  if not marker then
+    marker, content = line:match("^(%s*%d+%.%s+)(.*)")
+  end
+  if not marker then
+    marker, content = line:match("^(%s*-%s+%[.%]%s+)(.*)")
+  end
+  
+  if marker then
+    -- Toggle strikethrough on content only
+    if content:match("^~~.*~~$") then
+      content = content:gsub("^~~(.*)~~$", "%1")
+    else
+      content = "~~" .. content .. "~~"
+    end
+    vim.fn.setline(".", marker .. content)
+  else
+    -- Toggle strikethrough on entire line
+    if line:match("^~~.*~~$") then
+      vim.fn.setline(".", line:gsub("^~~(.*)~~$", "%1"))
+    else
+      vim.fn.setline(".", "~~" .. line .. "~~")
+    end
+  end
+end
+
 -- Text formatting
 map({"n", "v"}, "<leader>mb", surround_text("**", "**"), { desc = "Bold" })
 map({"n", "v"}, "<leader>mi", surround_text("*", "*"), { desc = "Italic" })
-map({"n", "v"}, "<leader>ms", surround_text("~~", "~~"), { desc = "Strikethrough" })
+map("n", "<leader>ms", strikethrough, { desc = "Strikethrough" })
+map("v", "<leader>ms", surround_text("~~", "~~"), { desc = "Strikethrough" })
 map({"n", "v"}, "<leader>mc", surround_text("`", "`"), { desc = "Inline code" })
 
 -- List functions
